@@ -439,7 +439,7 @@ class Lambda(Layer):
             # otherwise, we default to the input shape
             return input_shape
         elif type(self._output_shape) in {tuple, list}:
-
+            print("THIS IS INPUT SHAPE FOR {} : {}".format(self.name,input_shape))
             if type(input_shape) is list:
                 input_shape = input_shape[0]
 
